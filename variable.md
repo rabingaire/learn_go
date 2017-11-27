@@ -1,5 +1,7 @@
 # Variable
 
+### Default Value 
+
 ```go
 package main
 
@@ -20,6 +22,10 @@ func main() {
 }
 ```
 
+* In above code example we are learning the different data types supported by go language.
+
+
+### Declaration and Definition
 
 ```go
 package main
@@ -51,6 +57,35 @@ func main() {
 }
 ```
 
+* In above code example we are learning the different ways to declare a variable.
+
+* `var b string = "Hello World"`
+  
+  Here the `b` is declared and defined as `string`
+
+* `var c, d string = "Hello", "World"`
+
+  Here we are declaring two variable on a single line with same data type
+
+* Here we are declaring two variable at a time with different data types.
+    ```go
+    var (
+        e int = 20
+        f string = "Hello"
+    )
+    ```
+
+
+* `g := 12.5`
+  
+  This is the shortest way to declare and define a variable, Go will automatically identify the data type by looking at the value on right side at the compile time.
+
+* `const pi float32 = 3.14`
+
+   This is how you declare and define a `const` in Go language.
+
+### Error
+
 ```go
 package main
 
@@ -69,3 +104,9 @@ func main() {
     
 }
 ```
+
+* Go language is a statically typed language, that means once a variable defined as a int, float, or bool it can never be changed into another type later on the other parts of the code.
+
+* Once a variable is declared we can't redeclare it again.
+
+* We can't change the value of constant ever, Go will throw error in compile time if the value of const is found to be redefined.
