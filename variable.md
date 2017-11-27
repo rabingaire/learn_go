@@ -45,3 +45,18 @@ func main() {
     fmt.Println(g) // 12.5
 }
 ```
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    var a int = 10
+
+    a = 10.5 // We cannot do this a is already defined as int so we can't reassign it to float
+
+    var a = 20 // We cannot do this a is already declared, we can't redeclared it again
+    
+}
+```
