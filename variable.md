@@ -35,6 +35,9 @@ func main() {
         f string = "Hello"
     )
     g := 12.5
+    var h = 10 // Go will identify h as int during compile time when type is not specified 
+
+    const pi = 3.14 // This is constant we can't change this value ever again
 
     fmt.Println(a) // 0
     fmt.Println(b) // "Hello World"
@@ -43,6 +46,8 @@ func main() {
     fmt.Println(e) // 20
     fmt.Println(f) // "Hello"
     fmt.Println(g) // 12.5
+    fmt.Println(pi) // 3.14
+    fmt.Println(h) // 10
 }
 ```
 
@@ -56,7 +61,11 @@ func main() {
 
     a = 10.5 // We cannot do this a is already defined as int so we can't reassign it to float
 
-    var a = 20 // We cannot do this a is already declared, we can't redeclared it again
+    var a = 20 // We cannot do this a is already declared, we can't redeclare it again
+
+    const pi = 3.14
+
+    pi = 4.14 // Error constant can't be redefined
     
 }
 ```
